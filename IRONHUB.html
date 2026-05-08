@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON HUB | Total Interaction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .heading-font { font-family: 'Oswald', sans-serif; }
+        .bg-mesh {
+            background-color: #000;
+            background-image: radial-gradient(at 0% 0%, hsla(0,0%,15%,1) 0, transparent 50%), 
+                              radial-gradient(at 100% 100%, hsla(0,0%,10%,1) 0, transparent 50%);
+        }
+        .text-outline { -webkit-text-stroke: 1px rgba(255,255,255,0.3); color: transparent; }
+        .active-tab { border-bottom: 2px solid white; color: white !important; }
+    </style>
+</head>
+<body class="bg-mesh text-white min-h-screen">
+
+   <!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 px-6 lg:px-16 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+        <!-- Main Logo URL Fix -->
+        <img src="https://i.pinimg.com/1200x/00/cd/8e/00cd8eabf948d596af53e10361a99928.jpg" alt="IRON HUB Logo" class="h-10 w-auto">
+        <div class="hidden sm:block heading-font text-xl font-black tracking-tighter uppercase">
+            IRON <span class="text-gray-500">HUB</span>
+        </div>
+    </div>
+    
+    <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500">
+        <a href="#home" class="hover:text-white transition">Home</a>
+        <a href="#programs" class="hover:text-white transition">Programs</a>
+        <a href="#calculator" class="hover:text-white transition">Tools</a>
+        <a href="#membership" class="hover:text-white transition">Membership</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+    </div>
+
+    <button onclick="toggleModal('join-modal')" class="bg-white text-black px-6 py-2 text-xs font-black uppercase tracking-widest hover:invert transition duration-300">
+        Get Membership
+    </button>
+</nav>
+
+<!-- Hero Section Image Fix -->
+<section id="home" class="pt-32 pb-20 px-6 lg:px-16 flex flex-col lg:flex-row items-center gap-12">
+    <div class="lg:w-1/2 space-y-6">
+        <h1 class="text-7xl lg:text-9xl font-black heading-font leading-none uppercase">
+            STRENGTH <br> <span class="text-outline hover:text-white transition duration-700">DEFINED</span>
+        </h1>
+        <p class="text-gray-400 max-w-md italic border-l-2 border-white pl-4">"The only bad workout is the one that didn't happen."</p>
+    </div>
+    <div class="lg:w-1/2 relative group">
+        <div class="border border-white/20 p-2 grayscale hover:grayscale-0 transition duration-1000">
+            <!-- Background Visual URL Fix -->
+            <img src="https://i.pinimg.com/736x/4a/b6/08/4ab6083e9b237fbbbcc3d558c0453275.jpg" class="w-full h-[500px] object-cover" alt="Gym Atmosphere">
+        </div>
+    </div>
+</section>
+
+    <section id="home" class="pt-32 pb-20 px-6 lg:px-16 flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2 space-y-6">
+            <h1 class="text-7xl lg:text-9xl font-black heading-font leading-none uppercase">
+                STRENGTH <br> <span class="text-outline hover:text-white transition duration-700">DEFINED</span>
+            </h1>
+            <p class="text-gray-400 max-w-md italic border-l-2 border-white pl-4">"The only bad workout is the one that didn't happen."</p>
+            <div class="flex gap-4">
+                <button class="bg-white text-black font-bold px-8 py-4 uppercase text-sm tracking-widest hover:bg-zinc-300">Book Tour</button>
+                <button class="border border-white px-8 py-4 uppercase text-sm tracking-widest hover:bg-white hover:text-black transition">Explore</button>
+            </div>
+        </div>
+        <div class="lg:w-1/2 relative group">
+            <div class="border border-white/20 p-2 grayscale hover:grayscale-0 transition duration-1000">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000" class="w-full h-[500px] object-cover">
+            </div>
+            <div class="absolute -bottom-6 -right-6 bg-white text-black p-6 heading-font text-4xl shadow-2xl group-hover:-translate-y-2 transition-transform">
+                EST. 2024
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="py-20 px-6 lg:px-16 bg-zinc-950">
+        <h2 class="text-4xl font-black heading-font mb-10 border-b border-white/10 pb-4">TRAINING PROGRAMS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="border border-white/10 p-8 hover:bg-white hover:text-black transition-all duration-500 group cursor-pointer">
+                <h3 class="text-2xl font-black heading-font mb-2">POWERLIFTING</h3>
+                <p class="text-gray-500 group-hover:text-zinc-700 mb-6 text-sm">Focus on the Big Three: Squat, Bench, Deadlift.</p>
+                <span class="text-xs font-bold uppercase tracking-widest border-b border-current">View Schedule →</span>
+            </div>
+            <div class="border border-white/10 p-8 hover:bg-white hover:text-black transition-all duration-500 group cursor-pointer">
+                <h3 class="text-2xl font-black heading-font mb-2">HIIT CORE</h3>
+                <p class="text-gray-500 group-hover:text-zinc-700 mb-6 text-sm">High intensity interval training for maximum burn.</p>
+                <span class="text-xs font-bold uppercase tracking-widest border-b border-current">View Schedule →</span>
+            </div>
+            <div class="border border-white/10 p-8 hover:bg-white hover:text-black transition-all duration-500 group cursor-pointer">
+                <h3 class="text-2xl font-black heading-font mb-2">BOXING</h3>
+                <p class="text-gray-500 group-hover:text-zinc-700 mb-6 text-sm">Technical striking and conditioning for athletes.</p>
+                <span class="text-xs font-bold uppercase tracking-widest border-b border-current">View Schedule →</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="py-20 px-6 lg:px-16">
+        <div class="max-w-4xl mx-auto border border-white/20 p-10 bg-black">
+            <h2 class="text-3xl font-black heading-font mb-8">BMI CALCULATOR</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-widest mb-2">Height (cm)</label>
+                        <input type="number" id="height" placeholder="180" class="w-full bg-zinc-900 border border-white/10 p-4 focus:border-white outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-widest mb-2">Weight (kg)</label>
+                        <input type="number" id="weight" placeholder="75" class="w-full bg-zinc-900 border border-white/10 p-4 focus:border-white outline-none transition">
+                    </div>
+                    <button onclick="calculateBMI()" class="w-full bg-white text-black font-black py-4 uppercase tracking-tighter hover:bg-gray-300 transition">Calculate Results</button>
+                </div>
+                <div class="flex flex-col justify-center items-center border-l border-white/10">
+                    <div id="bmi-result" class="text-6xl font-black heading-font">0.0</div>
+                    <div id="bmi-status" class="text-gray-500 uppercase tracking-widest text-sm mt-2">Enter Details</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="onerepmax" class="py-20 px-6 lg:px-16 bg-zinc-950 border-t border-white/10">
+        <div class="max-w-4xl mx-auto border border-white/20 p-10 bg-black relative overflow-hidden group hover:border-white/40 transition duration-500">
+            <!-- Decorative Background Element -->
+            <div class="absolute -right-10 -top-10 opacity-5 heading-font text-[200px] leading-none pointer-events-none group-hover:scale-110 transition-transform duration-700">1RM</div>
+            
+            <h2 class="text-3xl font-black heading-font mb-2 relative z-10">ONE REP MAX CALCULATOR</h2>
+            <p class="text-gray-500 text-sm mb-8 relative z-10">Calculate your true strength potential and uncover your target training zones using the Epley formula.</p>
+            
+            <div class="grid md:grid-cols-2 gap-10 relative z-10">
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-widest mb-2">Weight Lifted</label>
+                        <input type="number" id="lift-weight" placeholder="e.g. 225" class="w-full bg-zinc-900 border border-white/10 p-4 focus:border-white outline-none transition text-white">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-widest mb-2">Reps Performed (1-12)</label>
+                        <input type="number" id="lift-reps" placeholder="e.g. 5" max="12" min="1" class="w-full bg-zinc-900 border border-white/10 p-4 focus:border-white outline-none transition text-white">
+                    </div>
+                    <button onclick="calculate1RM()" class="w-full bg-white text-black font-black py-4 uppercase tracking-tighter hover:bg-gray-300 transition mt-2">Calculate Max</button>
+                </div>
+                
+                <!-- Hidden by default, revealed via JS -->
+                <div class="flex flex-col justify-center border-l border-white/10 md:pl-10 hidden opacity-0 transition-opacity duration-500" id="orm-results">
+                    <div class="text-[10px] uppercase tracking-widest text-gray-500 mb-1">Estimated 1RM</div>
+                    <div class="flex items-baseline gap-2 mb-6">
+                        <div id="orm-max" class="text-6xl font-black heading-font text-white">0</div>
+                    </div>
+                    
+                    <div class="space-y-3 w-full">
+                        <div class="flex justify-between text-sm border-b border-white/10 pb-2">
+                            <span class="text-gray-400">90% <span class="text-[10px] tracking-widest ml-2 uppercase">(Strength)</span></span>
+                            <span id="orm-90" class="font-bold text-white">0</span>
+                        </div>
+                        <div class="flex justify-between text-sm border-b border-white/10 pb-2">
+                            <span class="text-gray-400">80% <span class="text-[10px] tracking-widest ml-2 uppercase">(Hypertrophy)</span></span>
+                            <span id="orm-80" class="font-bold text-white">0</span>
+                        </div>
+                        <div class="flex justify-between text-sm border-b border-white/10 pb-2">
+                            <span class="text-gray-400">70% <span class="text-[10px] tracking-widest ml-2 uppercase">(Endurance)</span></span>
+                            <span id="orm-70" class="font-bold text-white">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="membership" class="py-20 px-6 lg:px-16 bg-white text-black">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+        <div>
+            <h2 class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-2">Select your tier</h2>
+            <h3 class="text-6xl font-black heading-font uppercase leading-none">Membership <br>Options</h3>
+        </div>
+        <p class="text-gray-600 max-w-xs text-sm uppercase font-bold italic">Prices are billed monthly. No long-term contracts. Just results.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+        <!-- Basic -->
+        <div class="border border-black/10 p-10 flex flex-col justify-between hover:bg-zinc-100 transition">
+            <div>
+                <h4 class="heading-font text-2xl font-black">BASIC</h4>
+                <div class="text-4xl font-black heading-font my-4">$29<span class="text-sm">/mo</span></div>
+                <ul class="text-[10px] uppercase tracking-widest space-y-3 mb-10 text-gray-500">
+                    <li>• Access 05:00 - 22:00</li>
+                    <li>• Standard Equipment</li>
+                    <li>• Locker Access</li>
+                </ul>
+            </div>
+            <button onclick="toggleModal('join-modal')" class="w-full border-2 border-black py-4 text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition">Select Plan</button>
+        </div>
+
+        <!-- Pro -->
+        <div class="border-4 border-black p-10 flex flex-col justify-between relative">
+            <div class="absolute top-0 right-0 bg-black text-white px-4 py-1 text-[8px] font-black uppercase tracking-tighter">Most Popular</div>
+            <div>
+                <h4 class="heading-font text-2xl font-black">PRO</h4>
+                <div class="text-4xl font-black heading-font my-4">$59<span class="text-sm">/mo</span></div>
+                <ul class="text-[10px] uppercase tracking-widest space-y-3 mb-10">
+                    <li>• 24/7 Full Access</li>
+                    <li>• All Classes Included</li>
+                    <li>• 1 Guest Pass / Mo</li>
+                </ul>
+            </div>
+            <button onclick="toggleModal('join-modal')" class="w-full bg-black text-white py-4 text-xs font-black uppercase tracking-widest hover:bg-zinc-800 transition">Purchase Plan</button>
+        </div>
+
+        <!-- Elite -->
+        <div class="border border-black/10 p-10 flex flex-col justify-between hover:bg-zinc-100 transition">
+            <div>
+                <h4 class="heading-font text-2xl font-black">ELITE</h4>
+                <div class="text-4xl font-black heading-font my-4">$99<span class="text-sm">/mo</span></div>
+                <ul class="text-[10px] uppercase tracking-widest space-y-3 mb-10 text-gray-500">
+                    <li>• Personal Trainer (2h/mo)</li>
+                    <li>• Recovery Suite Access</li>
+                    <li>• Nutrition Coaching</li>
+                </ul>
+            </div>
+            <button onclick="toggleModal('join-modal')" class="w-full border-2 border-black py-4 text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition">Select Plan</button>
+        </div>
+    </div>
+</section>
+    <section id="about" class="py-24 px-6 lg:px-16 border-t border-white/10">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+            
+            <!-- Branding & Philosophy -->
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-[10px] uppercase tracking-[0.5em] text-gray-500 mb-4">The Foundation</h2>
+                    <h3 class="text-5xl font-black heading-font leading-none uppercase italic">
+                        WE ARE NOT A <span class="text-outline">COMMERCIAL</span> GYM. <br>WE ARE A HUB.
+                    </h3>
+                </div>
+                <p class="text-gray-400 leading-relaxed max-w-xl">
+                    Founded in 2024, IRON HUB was built for the 1%. Not the 1% in wealth, but the 1% who refuse to quit. We provide the equipment, the atmosphere, and the community—you provide the grit. This is a sanctuary for powerlifters, athletes, and those dedicated to the pursuit of physical dominance.
+                </p>
+                <div class="flex gap-10">
+                    <div>
+                        <div class="text-2xl font-black heading-font">500+</div>
+                        <div class="text-[8px] uppercase tracking-widest text-gray-500">Active Members</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-black heading-font">24/7</div>
+                        <div class="text-[8px] uppercase tracking-widest text-gray-500">Access Control</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-black heading-font">0</div>
+                        <div class="text-[8px] uppercase tracking-widest text-gray-500">Excuses Allowed</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tactical Contact Info -->
+            <div class="bg-zinc-900/50 border border-white/5 p-8 lg:p-12 space-y-10">
+                <h4 class="text-xl font-black heading-font uppercase tracking-tight">Direct Communications</h4>
+                
+                <div class="space-y-6">
+                    <!-- Email -->
+                    <div class="flex items-center gap-6 group cursor-pointer">
+                        <div class="w-12 h-12 border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-widest">Ownership Email</p>
+                            <p class="text-lg font-bold">KIMPHENG345@GMAIL.COM</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="flex items-center gap-6 group cursor-pointer">
+                        <div class="w-12 h-12 border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-widest">Front Desk</p>
+                            <p class="text-lg font-bold">+855 966948878-IRON</p>
+                        </div>
+                    </div>
+
+                    <!-- Socials -->
+                    <div class="pt-6 border-t border-white/5">
+                        <p class="text-[10px] text-gray-500 uppercase tracking-widest mb-4">Digital Presence</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-xs font-black border border-white/20 px-4 py-2 hover:bg-white hover:text-black transition">INSTAGRAM</a>
+                            <a href="#" class="text-xs font-black border border-white/20 px-4 py-2 hover:bg-white hover:text-black transition">YOUTUBE</a>
+                            <a href="#" class="text-xs font-black border border-white/20 px-4 py-2 hover:bg-white hover:text-black transition">X / TWITTER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-white/10 text-center text-gray-600 text-[10px] uppercase tracking-[0.5em]">
+        &copy; 2026 IRON HUB ATHLETICS. NO PAIN NO GAIN.
+    </footer>
+
+    <div id="join-modal" class="hidden fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-6">
+        <div class="max-w-md w-full bg-zinc-900 p-8 border border-white/20 relative">
+            <button onclick="toggleModal('join-modal')" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+            <h3 class="text-3xl font-black heading-font mb-6">BECOME A MEMBER</h3>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Welcome to the Hub!');">
+                <input type="text" placeholder="FULL NAME" class="w-full bg-black border border-white/10 p-3 outline-none focus:border-white">
+                <input type="email" placeholder="EMAIL ADDRESS" class="w-full bg-black border border-white/10 p-3 outline-none focus:border-white">
+                <select class="w-full bg-black border border-white/10 p-3 outline-none focus:border-white text-gray-400">
+                    <option>BASIC PLAN - $29/mo</option>
+                    <option>PRO PLAN - $59/mo</option>
+                    <option>ELITE PLAN - $99/mo</option>
+                </select>
+                <button class="w-full bg-white text-black font-black py-3 uppercase tracking-widest">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+    
+        // Modal Logic
+        function toggleModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.toggle('hidden');
+        }
+
+        // BMI Calculation Logic
+        function calculateBMI() {
+            const h = document.getElementById('height').value / 100;
+            const w = document.getElementById('weight').value;
+            const resultDiv = document.getElementById('bmi-result');
+            const statusDiv = document.getElementById('bmi-status');
+
+            if(h > 0 && w > 0) {
+                const bmi = (w / (h * h)).toFixed(1);
+                resultDiv.innerText = bmi;
+                
+                if(bmi < 18.5) statusDiv.innerText = "Underweight";
+                else if(bmi < 25) statusDiv.innerText = "Normal Weight";
+                else if(bmi < 30) statusDiv.innerText = "Overweight";
+                else statusDiv.innerText = "Obese";
+                
+                resultDiv.classList.add('text-white');
+            } else {
+                alert("Please enter valid numbers");
+            }
+        }
+    </script>
+</body>
+</html>
